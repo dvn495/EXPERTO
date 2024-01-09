@@ -1,0 +1,90 @@
+{
+    "campus": {
+        "campers": {
+            "1": {
+                "id": 1,
+                "Nombre": "1",
+                "Apellidos": "1",
+                "Direccion": "1",
+                "Acudiente": {
+                    "id": 1,
+                    "Nombre": "1",
+                    "Telefono": 1,
+                    "email": "1"
+                },
+                "Telefono": {
+                    "1": 1
+                },
+                "estado": " "
+            },
+            "5": {
+                "id": 5,
+                "Nombre": "5",
+                "Apellidos": "5",
+                "Direccion": "5",
+                "Acudiente": {
+                    "id": 5,
+                    "Nombre": "5",
+                    "Telefono": 5,
+                    "email": "5"
+                },
+                "Telefono": {
+                    "5": 5
+                },
+                "estado": " "
+            },
+            "9": {
+                "id": 9,
+                "Nombre": "9",
+                "Apellidos": "9",
+                "Direccion": "9",
+                "Acudiente": {
+                    "id": 9,
+                    "Nombre": "9",
+                    "Telefono": 9,
+                    "email": "9"
+                },
+                "Telefono": {
+                    "9": 9
+                },
+                "estado": " "
+            },
+            "7886": {
+                "id": 7886,
+                "Nombre": "5",
+                "Apellidos": "5",
+                "Direccion": "5",
+                "Acudiente": {
+                    "id": 3,
+                    "Nombre": "34",
+                    "Telefono": 1,
+                    "email": "1"
+                },
+                "Telefono": {
+                    "1": 1
+                },
+                "estado": " "
+            },
+            "666": {
+                "id": 666,
+                "Nombre": "66",
+                "Apellidos": "666",
+                "Direccion": "666",
+                "Acudiente": {
+                    "id": 666,
+                    "Nombre": "666",
+                    "Telefono": 666,
+                    "email": "666"
+                },
+                "Telefono": {
+                    "666": 666
+                },
+                "estado": " "
+            }
+        },
+        "rutas": {},
+        "pruebas": {},
+        "salones": {},
+        "camper": {}
+    }
+}

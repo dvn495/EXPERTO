@@ -12,7 +12,7 @@ def AddData(*param):
         if (len(param) > 1):
             data_file.update({param[0]:param[1]})
         else:
-            data_file.update({param[0]})
+            data_file.update(param[0])
         # data_file[llavePrincipal].update({codigo:info})
         rwf.seek(0)
         json.dump(data_file,rwf,indent=4)
@@ -20,6 +20,8 @@ def AddData(*param):
 
 def Eliminar(*param):
     data = list(param)
+    print(data)
+    os.system("pause")
     data[1].pop(data[0])
     NewFile(data[1])
 
@@ -35,3 +37,15 @@ def checkFile(*param):
     else:
         if(len(param)):
             NewFile(data[0])
+
+def Eliminarcamper(clave:int, *param):
+    print(param)
+    os.system("pause")
+    if clave in param["campus"]["campers"]:
+        param["campus"]["campers"].pop(clave)
+        NewFile(param)
+        print(f"Elemento con clave {clave} eliminado correctamente.")
+    else:
+        print(f"No se encontró un elemento con la clave {clave}.")
+    
+    
