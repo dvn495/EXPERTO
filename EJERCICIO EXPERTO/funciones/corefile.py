@@ -18,13 +18,6 @@ def AddData(*param):
         json.dump(data_file,rwf,indent=4)
         rwf.close()
 
-def Eliminar(*param):
-    data = list(param)
-    print(data)
-    os.system("pause")
-    data[1].pop(data[0])
-    NewFile(data[1])
-
 def ReadFile():
     with open(MY_DATABASE,"r") as rf:
         return json.load(rf)
@@ -37,15 +30,20 @@ def checkFile(*param):
     else:
         if(len(param)):
             NewFile(data[0])
-
-def Eliminarcamper(clave:int, *param):
-    print(param)
-    os.system("pause")
-    if clave in param["campus"]["campers"]:
-        param["campus"]["campers"].pop(clave)
-        NewFile(param)
-        print(f"Elemento con clave {clave} eliminado correctamente.")
+        
+def EliminarCamper(clave : int, *param):
+    campersdict = param[0]
+    if str(clave) in campersdict['campus']['campers']:
+        del campersdict['campus']['campers'][str(clave)]
+        NewFile(campersdict)
+        print(f"El camper con id {clave} fue eliminado satisfactoriamente")
     else:
-        print(f"No se encontró un elemento con la clave {clave}.")
+        print(f"No se encontro un camper registrado con la id {clave}")
+    os.system("pause")    
+
+
+
+
+
     
     

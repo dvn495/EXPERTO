@@ -1,38 +1,6 @@
 {
     "campus": {
         "campers": {
-            "1": {
-                "id": 1,
-                "Nombre": "1",
-                "Apellidos": "1",
-                "Direccion": "1",
-                "Acudiente": {
-                    "id": 1,
-                    "Nombre": "1",
-                    "Telefono": 1,
-                    "email": "1"
-                },
-                "Telefono": {
-                    "1": 1
-                },
-                "estado": " "
-            },
-            "5": {
-                "id": 5,
-                "Nombre": "5",
-                "Apellidos": "5",
-                "Direccion": "5",
-                "Acudiente": {
-                    "id": 5,
-                    "Nombre": "5",
-                    "Telefono": 5,
-                    "email": "5"
-                },
-                "Telefono": {
-                    "5": 5
-                },
-                "estado": " "
-            },
             "9": {
                 "id": 9,
                 "Nombre": "9",
@@ -82,7 +50,23 @@
                 "estado": " "
             }
         },
-        "rutas": {},
+        "rutas": {
+            "fundamentos": [
+                "a"
+            ],
+            "programacion.web": [
+                "a"
+            ],
+            "programacion.formal": [
+                "a"
+            ],
+            "bases.datos": [
+                "a"
+            ],
+            "backend": [
+                "a"
+            ]
+        },
         "pruebas": {},
         "salones": {},
         "camper": {}

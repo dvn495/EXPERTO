@@ -2,6 +2,8 @@ import os
 
 menu = ["Registro de campers","Registro de prueba","Creacion de rutas de entranmiento","Gestor de matriculas", "Modulo de reportes"]
 submenu= ["Nuevo camper","Borrar camper", "Editar camper","Buscar","Regesar al menu"]
+
+
 def MenuPrincipal():
     header= """
         ╔═════════════════════════════╗
@@ -24,3 +26,13 @@ def MenuCampers():
     for i, item in enumerate(submenu):
         print(f"{(i+1)}-{item}")
         
+
+    
+    
+    
+        
+        
+    
+    
+       
+    

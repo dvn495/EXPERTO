@@ -3,6 +3,7 @@ import os
 import ui.estudiantes as c
 import funciones.campers as camp
 import ui.menu as menu
+import ui.rutas as rutas
 campus = {
     "campus":{
         "campers":{},
@@ -30,8 +31,10 @@ if __name__ == "__main__":
                 os.system("pause")
             elif(mainmenu == 2):
                 pass
-            elif(mainmenu ==2):
-                pass
+            elif(mainmenu ==3):
+                rutas.creacionrutas(campus)
+                data = campus.get('campus').get("rutas")
+                camp.Newruta(data)
             elif(mainmenu ==2):
                 pass
             elif(mainmenu ==2):

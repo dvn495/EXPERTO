@@ -11,9 +11,15 @@ campus = {
     
 }
 cf.MY_DATABASE='data/campers.json'
+
 def NewCamper(data : dict):
     campus["campus"]["campers"].update(data)
     cf.AddData(campus)
+    
+def Newruta(data : dict):
+    campus["campus"]["rutas"].update(data)
+    cf.AddData(campus)
+    
 
 def validarArchivoCampers():
     if(cf.checkFile()):
@@ -28,7 +34,7 @@ def searchCamper()->dict:
 
 def deleteCamper():
     idbusqueda = int(input("Ingrese el id a buscar: "))
-    cf.Eliminarcamper(idbusqueda,campus)
+    cf.EliminarCamper(idbusqueda,campus)
     
 
 
